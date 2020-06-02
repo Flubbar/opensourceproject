@@ -1,12 +1,14 @@
 package app.android.ww.com.myfit;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import app.android.ww.com.myfit.R;
 
 /*
  * 운동시간 타이머
@@ -18,7 +20,7 @@ import android.widget.TextView;
  *
  */
 
-public class TimerActivity extends AppCompatActivity {
+public class TimerActivity extends Activity {
 
     TextView textView ;
     Button start, pause, stop;
