@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SleepTime"
+    android:orientation = "vertical">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000b80"
+        android:textSize="30sp"
+        android:text="수면 관리" />
+    <TextView
+        android:padding="5pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:text="오늘의 수면 시간"/>
+    <TextView
+        android:id="@+id/text_sleepLength"
+        android:padding="5pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:text="기록되지 않음"
+        />
+    <TextView
+        android:layout_margin="5pt"
+        android:padding="5pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe4a5"
+        android:textColor="#df5600"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="경고: 불규칙한 수면패턴\n어제 수면시간과 2시간 이상 차이"
+        android:visibility="gone"
+        />
+    <TextView
+        android:layout_margin="5pt"
+        android:padding="5pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe4a5"
+        android:textColor="#df5600"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="경고: 수면 부족\n수면 시간이 6시간 이하"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/btn_addTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5pt"
+        android:padding="10pt"
+        android:textSize="20sp"
+        android:text="+ 수면 및 기상 시각 입력"
+        android:onClick ="onClick"
+        />
+    <TextView
+        android:id="@+id/text_sleepTime"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000b80"
+        android:textSize="20sp"
+        android:text="수면 시각: 기록되지 않음" />
+    <TextView
+        android:id="@+id/text_wakeTime"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000b80"
+        android:textSize="20sp"
+        android:text="기상 시각: 기록되지 않음" />
+</LinearLayout>
