@@ -22,8 +22,6 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Stretching"></activity>
-        <activity android:name=".SleepTime"></activity>
     </application>
 
 </manifest>
