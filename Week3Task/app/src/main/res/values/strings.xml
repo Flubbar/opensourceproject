@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">냉난방장치</string>
+    <string name="showText">글자 나타내기</string>
+    <string name="warm">난방</string>
+    <string name="cool">냉방</string>
+    <string name="openPage">페이지 열기</string>
+    <string name="none">기본 문자열</string>
+</resources>

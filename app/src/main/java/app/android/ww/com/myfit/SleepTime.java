@@ -27,6 +27,10 @@ public class SleepTime extends AppCompatActivity {
 
     Date currentDate = Calendar.getInstance().getTime();
     String date = new SimpleDateFormat("yyyyMMdd", Locale.getDefault()).format(currentDate);
+
+    TextView sText = (TextView)findViewById(R.id.text_sleepTime);
+    TextView wText = (TextView)findViewById(R.id.text_wakeTime);
+    TextView sLength = (TextView)findViewById(R.id.text_sleepLength);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,9 +39,7 @@ public class SleepTime extends AppCompatActivity {
         File file = new File(date+".txt");
         try{
             if(file.exists()){
-                TextView sText = (TextView)findViewById(R.id.text_sleepTime);
-                TextView wText = (TextView)findViewById(R.id.text_wakeTime);
-                TextView sLength = (TextView)findViewById(R.id.text_sleepLength);
+
 
                 String sleep = ReadTextFile(date+".txt");
                 String wake = ReadTextFile(date+".txt");
